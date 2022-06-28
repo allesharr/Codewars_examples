@@ -1,9 +1,8 @@
 package main
 
 import (
+	tocamelcase "CodeWars/ToCamelCase"
 	"fmt"
-
-	"/ToCamelCase/tocamelcase"
 )
 
 func main() {
