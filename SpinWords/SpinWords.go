@@ -7,7 +7,6 @@ import (
 //Si longitude de la linea es 5 o mas de 5 symbolos -> tienes que volver la linea
 func SpinWords(str string) string {
 	ss := strings.Split(str, " ")
-	if strings.Contains(str)
 	var return_string string = ""
 	for _, element := range ss {
 		if len(element) > 4 {

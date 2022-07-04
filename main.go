@@ -1,14 +1,12 @@
 package main
 
 import (
-	tocamelcase "CodeWars/ToCamelCase"
-	"fmt"
+	uol "CodeWars/UnitedOfLists"
 )
 
 func main() {
-
-	ss := tocamelcase.ToCamelCase("the-stealth-warrior")
-	fmt.Println(ss)
-	ss = tocamelcase.ToCamelCase("The_Stealth_Warrior")
-	fmt.Println(ss)
+	// tocamelcase.Test()
+	// fmt.Println(spinwords.SpinWords("Welcome my friend"))
+	ss := uol.Unite("file1.txt", "file2.txt")
+	uol.ReturnToFile(ss)
 }

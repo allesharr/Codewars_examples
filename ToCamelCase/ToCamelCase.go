@@ -2,10 +2,19 @@ package tocamelcase
 
 import (
 	"bytes"
+	"fmt"
 	"regexp"
 	"strings"
 )
 
+func Test() {
+	ss := ToCamelCase("the-stealth-warrior")
+	fmt.Println(ss)
+	ss = ToCamelCase("The_Stealth_Warrior")
+	fmt.Println(ss)
+}
+
+//Esribe un funtion que hablas los portas en el tipo (palabridadPalabridad 0 PalabridadPalabridad). Entre es los padabras divididos por un de symbolos -,_
 func ToCamelCase(s string) string {
 	reg, _ := regexp.MatchString(`\w\-\w`, s)
 	returnString := ""
