@@ -9,8 +9,8 @@ import (
 )
 
 func Unite(filepath1 string, filepath2 string) []string {
-	var sa []string
-	sa = append(sa, " ")
+	var sa []string = make([]string, 1)
+	// sa = append(sa, " ")
 
 	file1, err := os.Open(filepath1)
 	defer file1.Close()
@@ -54,7 +54,7 @@ func Unite(filepath1 string, filepath2 string) []string {
 
 		}
 	}
-	sa = sa[1:]
+	// sa = sa[1:]
 	return sa
 }
 
