@@ -167,6 +167,7 @@ func Encode(text string) (codes []Code, err error) {
 	return codes, err
 
 }
-func Decode(text string) (codes []Code, err error) {
 
-}
+// func Decode(text string) (codes []Code, err error) {
+
+// }

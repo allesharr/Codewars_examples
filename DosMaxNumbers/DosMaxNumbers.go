@@ -9,7 +9,7 @@ func TwoOldestAges(ages []int) [2]int {
 			second_max = max
 			max = element
 		} else {
-			if element > second_max && element < max {
+			if element > second_max && element <= max {
 				second_max = element
 			}
 		}

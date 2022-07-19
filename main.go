@@ -1,12 +1,10 @@
 package main
 
 import (
-	uol "CodeWars/UnitedOfLists"
+	uol "CodeWars/FindOuiler"
+	"fmt"
 )
 
 func main() {
-	// tocamelcase.Test()
-	// fmt.Println(spinwords.SpinWords("Welcome my friend"))
-	ss := uol.Unite("file1.txt", "file2.txt")
-	uol.ReturnToFile(ss)
+	fmt.Println(uol.FindOutlier([]int{2, 4, 0, -100, -3, 10, 2602, 36}))
 }
